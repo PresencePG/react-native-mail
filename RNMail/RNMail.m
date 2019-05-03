@@ -130,6 +130,8 @@ RCT_EXPORT_METHOD(mail:(NSDictionary *)options
                 mimeType = @"text/calendar"; 
             } else if ([attachmentType isEqualToString:@"xlsx"]) {
                 mimeType = @"application/vnd.openxmlformats-officedocument.spreadsheetml.sheet";
+            } else if ([attachmentType isEqualToString:@"mp4"]) {
+                mimeType = @"video/mp4";
             }
 
             // Add attachment

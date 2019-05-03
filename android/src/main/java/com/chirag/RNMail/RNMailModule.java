@@ -111,7 +111,7 @@ public class RNMailModule extends ReactContextBaseJavaModule {
 
       Uri fileUri = FileProvider.getUriForFile(reactContext, reactContext.getApplicationContext().getPackageName() + ".fileprovider", file);
       i.putExtra(Intent.EXTRA_STREAM, fileUri);
-      ClipData clipData = ClipData.newRawUri("Image", fileUri);
+      ClipData clipData = ClipData.newRawUri("File", fileUri);
       i.setClipData(clipData);
       i.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
 
